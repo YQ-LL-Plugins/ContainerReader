@@ -53,7 +53,7 @@ void PluginInit()
             if(bl.hasContainer())
             {
                 auto typeName = bl.getBlock()->getTypeName();
-                if(typeName == "minecraft:chest" || typeName == "minecraft:shulker_box")
+                if(typeName == "minecraft:chest" || EndsWith(typeName, "shulker_box"))
                 {
                     // chest or shulker_box, check if can be open
                     auto blockActor = (ChestBlockActor*)bl.getBlockEntity();
