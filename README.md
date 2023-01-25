@@ -1,29 +1,15 @@
-# LiteLoaderBDS C++ Plugin Template
+# ContainerReader - 容器内容预览
 
-The template repository for LiteLoaderBDS C++ plugin development.
+> 查看暂时无法打开的容器当中的内容。调试收集和打包机必备
 
-## Usage
+### 【简介】
 
-* Write and build your plugin
+一个很简单的小插件，辅助生电收集装置调试以及打包机调试
 
-  Please refer to [LiteLoaderBDS C++ Plugin Development Documentation](https://cpp.docs.litebds.com/en/) or [LiteLoaderBDS C++ 插件开发文档](https://cpp.docs.litebds.com/zh-Hans/).
+正常情况下，被其他实体方块盖住的箱子，以及打开方向被阻挡的潜影盒是无法打开的，如果需要查看其内容只能打破容器，或者破坏机器，不利于实时观察。本插件解决了这个问题~
 
-* Edit README.md and LICENSE
+### 【安装和使用】
 
-  You ought not to keep the original README.md, for it contains instructions on how to build your own plugin, which might not fit your plugin repository. The README.md of your repository should contain instructions on how to build, install and use your plugin.
+放入plugins目录，开服即可
 
-  You don't necessarily want your repository to be open sourced under the Unlicense, so please choose your own license in place of the `LICENSE` file.
-
-## For Beta Developers
-
-If you would like to experience the latest features for plugins in beta versions of LiteLoaderBDS, you can switch the branch of the SDK to beta. Run the commands below under the plugin repository:
-
-```sh
-git submodule set-branch --branch beta SDK
-git submodule update --init --remote
-```
-
-## License
-
-This repository is open source under the Unlicense.
-Please refer to [the license file](LICENSE) for further information.
+开服之后，如右键点击无法打开的容器，将在聊天栏输出容器内的物品信息，便于观察。正常可以打开的容器不会收到本插件影响
